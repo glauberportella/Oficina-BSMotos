@@ -11,8 +11,8 @@
 		<!-- Database connection settings -->
 		<property name="connection.driver_class">org.postgresql.Driver</property>
 		<property name="connection.url">jdbc:postgresql://localhost:5432/oficina</property>
-		<property name="connection.username">Luis</property>
-		<property name="connection.password">753214896</property>
+		<property name="connection.username">postgres</property>
+		<property name="connection.password">1305</property>
 
 		<!-- JDBC connection pool (use the built-in), quantidade de conexões simultaneas -->
 		<property name="connection.pool_size">1</property>
@@ -32,6 +32,14 @@
 		<!-- Drop and re-create the database schema on startup -->
 		<property name="hbm2ddl.auto">create</property>
 
+		<!-- Mapeamento -->
+		<mapping class="br.com.bsmotos.oficina.domain.Cliente" />
+		<mapping class="br.com.bsmotos.oficina.domain.Fornecedor" />
+		<mapping class="br.com.bsmotos.oficina.domain.ItemVenda" />
+		<mapping class="br.com.bsmotos.oficina.domain.Peca" />
+		<mapping class="br.com.bsmotos.oficina.domain.Pessoa" />
+		<mapping class="br.com.bsmotos.oficina.domain.Usuario" />
+		<mapping class="br.com.bsmotos.oficina.domain.Venda" />
 	</session-factory>
 
 </hibernate-configuration>
